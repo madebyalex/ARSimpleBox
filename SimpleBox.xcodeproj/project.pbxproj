@@ -14,6 +14,8 @@
 		11BF9C1B24F9DB950086828D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BF9C1924F9DB950086828D /* Main.storyboard */; };
 		11BF9C1D24F9DB970086828D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BF9C1C24F9DB970086828D /* Assets.xcassets */; };
 		11BF9C2024F9DB970086828D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BF9C1E24F9DB970086828D /* LaunchScreen.storyboard */; };
+		11D022E324FA97A500CD3468 /* SimpleBoxWithTouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D022E224FA97A500CD3468 /* SimpleBoxWithTouchVC.swift */; };
+		11D022E524FA9A2B00CD3468 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D022E424FA9A2B00CD3468 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		11BF9C1C24F9DB970086828D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11BF9C1F24F9DB970086828D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11BF9C2124F9DB970086828D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D022E224FA97A500CD3468 /* SimpleBoxWithTouchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBoxWithTouchVC.swift; sourceTree = "<group>"; };
+		11D022E424FA9A2B00CD3468 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			children = (
 				11BF9C1724F9DB950086828D /* ViewController.swift */,
 				11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */,
+				11D022E224FA97A500CD3468 /* SimpleBoxWithTouchVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 				11BF9C1C24F9DB970086828D /* Assets.xcassets */,
 				11BF9C1E24F9DB970086828D /* LaunchScreen.storyboard */,
 				11BF9C2124F9DB970086828D /* Info.plist */,
+				11D022E424FA9A2B00CD3468 /* Extensions.swift */,
 			);
 			path = SimpleBox;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D022E524FA9A2B00CD3468 /* Extensions.swift in Sources */,
+				11D022E324FA97A500CD3468 /* SimpleBoxWithTouchVC.swift in Sources */,
 				11083D6924FA913700A6F91B /* MultipleObjectsVC.swift in Sources */,
 				11BF9C1824F9DB950086828D /* ViewController.swift in Sources */,
 				11BF9C1424F9DB950086828D /* AppDelegate.swift in Sources */,

@@ -7,85 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="Gtb-dV-TP4">
-            <objects>
-                <viewController id="hEO-EZ-HP5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cP8-eI-z3A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0z-vm-Ftv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Y0z-vm-Ftv" firstAttribute="top" secondItem="cP8-eI-z3A" secondAttribute="top" id="1jq-1I-zAf"/>
-                            <constraint firstAttribute="trailing" secondItem="Y0z-vm-Ftv" secondAttribute="trailing" id="3ky-qj-fgC"/>
-                            <constraint firstItem="Y0z-vm-Ftv" firstAttribute="bottom" secondItem="6rK-VI-XwP" secondAttribute="bottom" id="Smk-mC-XMS"/>
-                            <constraint firstItem="Y0z-vm-Ftv" firstAttribute="leading" secondItem="cP8-eI-z3A" secondAttribute="leading" id="d4R-18-Nfq"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6rK-VI-XwP"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="JYc-HZ-Ib9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F57-Oj-K46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-406" y="392"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="PBP-qf-03A">
-            <objects>
-                <viewController id="bbK-iY-XNc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t9c-9x-zZ3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1g-Zw-q2M">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="t1g-Zw-q2M" firstAttribute="bottom" secondItem="Fvp-oR-DOc" secondAttribute="bottom" id="EEv-bQ-FIs"/>
-                            <constraint firstItem="t1g-Zw-q2M" firstAttribute="top" secondItem="t9c-9x-zZ3" secondAttribute="top" id="Kzp-5p-BT2"/>
-                            <constraint firstAttribute="trailing" secondItem="t1g-Zw-q2M" secondAttribute="trailing" id="fuM-eX-hBb"/>
-                            <constraint firstItem="t1g-Zw-q2M" firstAttribute="leading" secondItem="t9c-9x-zZ3" secondAttribute="leading" id="lHq-dc-VQr"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Fvp-oR-DOc"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="I0j-pq-ykR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qeb-kR-JI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-408.69565217391306" y="-256.47321428571428"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="ryr-Yo-04t">
-            <objects>
-                <tabBarController id="aTp-NB-onW" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wSi-aT-PvI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="bbK-iY-XNc" kind="relationship" relationship="viewControllers" id="jlu-tH-KQ6"/>
-                        <segue destination="hEO-EZ-HP5" kind="relationship" relationship="viewControllers" id="XWc-64-1fB"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ze-lQ-CG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1325" y="69"/>
-        </scene>
-        <!--Multiple ObjectsVC-->
+        <!--Simple Box With TouchVC-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
-                <viewController id="BV1-FR-VrT" customClass="MultipleObjectsVC" customModule="SimpleBox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="SimpleBoxWithTouchVC" customModule="SimpleBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,6 +32,7 @@
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2858" y="69"/>
         </scene>
