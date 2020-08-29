@@ -14,11 +14,25 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    private let label: UILabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.label.frame = CGRect(x: 0, y: 0, width: self.sceneView.frame.size.width, height: 44)
+        self.label.center = self.sceneView.center
+        self.label.textAlignment = .center
+        self.label.textColor = UIColor.white
+        self.label.font = UIFont.preferredFont(forTextStyle: .headline)
+        self.label.alpha = 0
+        
+        self.sceneView.addSubview(self.label)
+        
+
         // Debugging options
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+//        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
 //        self.view.addSubview(self.sceneView)
         
@@ -50,9 +64,25 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
+        
+        // Detecting a plane
+        configuration.planeDetection = .horizontal
 
         // Run the view's session
         sceneView.session.run(configuration)
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        DispatchQueue.main.async {
+            self.label.text = "Plane Detected"
+            
+            UIView.animate(withDuration: 3.0, animations: {
+                self.label.alpha = 1.0
+                
+            }) {(completion: Bool) in
+                self.label.alpha = 0.0
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -61,6 +91,10 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
+    
+    
+    
+    
     
     // Adding some objects
     func addObject() {
