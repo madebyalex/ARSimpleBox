@@ -23,3 +23,10 @@ extension UIColor {
                        alpha: 1.0)
     }
 }
+
+extension UIImage {
+    static func random() -> UIImage {
+        let randomNumber = Int.random(in: 1..<10)
+        return UIImage(named: "0\(randomNumber)")!
+    }
+}

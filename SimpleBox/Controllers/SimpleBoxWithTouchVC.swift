@@ -58,7 +58,7 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
     
     // Adding some objects
     func addObject() {
-        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0.01)
+        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0.005)
         
         let material = SCNMaterial()
         material.name = "Color"
@@ -66,7 +66,7 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
         box.materials = [material]
         
         let boxNode = SCNNode(geometry: box)
-        boxNode.position = SCNVector3(0, 0, -0.75)
+        boxNode.position = SCNVector3(0, -0.15, -0.75)
         
         sceneView.scene.rootNode.addChildNode(boxNode)
     }
@@ -86,7 +86,7 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
         if !hitResults.isEmpty {
             let node = hitResults[0].node
             let material = node.geometry?.material(named: "Color")
-            material?.diffuse.contents = UIColor.random()
+            material?.diffuse.contents = UIImage.random()
         }
     }
     
