@@ -17,11 +17,17 @@ class SimpleBoxWithTouchVC: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the view's delegate
-        sceneView.delegate = self
+        // Debugging options
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        
+//        self.view.addSubview(self.sceneView)
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
+        
+        
+        // Set the view's delegate
+        sceneView.delegate = self
         
         // Create a new scene
         let scene = SCNScene()
