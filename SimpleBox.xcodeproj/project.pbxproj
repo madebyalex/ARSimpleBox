@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11083D6924FA913700A6F91B /* MultipleObjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */; };
 		11BF9C1424F9DB950086828D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF9C1324F9DB950086828D /* AppDelegate.swift */; };
 		11BF9C1624F9DB950086828D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BF9C1524F9DB950086828D /* art.scnassets */; };
 		11BF9C1824F9DB950086828D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF9C1724F9DB950086828D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleObjectsVC.swift; sourceTree = "<group>"; };
 		11BF9C1024F9DB950086828D /* SimpleBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BF9C1324F9DB950086828D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BF9C1524F9DB950086828D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11083D6724FA911400A6F91B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11BF9C1724F9DB950086828D /* ViewController.swift */,
+				11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		11BF9C0724F9DB950086828D = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		11BF9C1224F9DB950086828D /* SimpleBox */ = {
 			isa = PBXGroup;
 			children = (
+				11083D6724FA911400A6F91B /* Controllers */,
 				11BF9C1324F9DB950086828D /* AppDelegate.swift */,
 				11BF9C1524F9DB950086828D /* art.scnassets */,
-				11BF9C1724F9DB950086828D /* ViewController.swift */,
 				11BF9C1924F9DB950086828D /* Main.storyboard */,
 				11BF9C1C24F9DB970086828D /* Assets.xcassets */,
 				11BF9C1E24F9DB970086828D /* LaunchScreen.storyboard */,
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11083D6924FA913700A6F91B /* MultipleObjectsVC.swift in Sources */,
 				11BF9C1824F9DB950086828D /* ViewController.swift in Sources */,
 				11BF9C1424F9DB950086828D /* AppDelegate.swift in Sources */,
 			);
