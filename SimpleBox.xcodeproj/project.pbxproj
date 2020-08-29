@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11083D6924FA913700A6F91B /* MultipleObjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */; };
+		11B705B624FAD37B0036E2D7 /* OverlayingPlaneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B705B524FAD37B0036E2D7 /* OverlayingPlaneVC.swift */; };
+		11B705B924FADFAB0036E2D7 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B705B824FADFAB0036E2D7 /* OverlayPlane.swift */; };
 		11BF9C1424F9DB950086828D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF9C1324F9DB950086828D /* AppDelegate.swift */; };
 		11BF9C1624F9DB950086828D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BF9C1524F9DB950086828D /* art.scnassets */; };
 		11BF9C1824F9DB950086828D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF9C1724F9DB950086828D /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleObjectsVC.swift; sourceTree = "<group>"; };
+		11B705B524FAD37B0036E2D7 /* OverlayingPlaneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayingPlaneVC.swift; sourceTree = "<group>"; };
+		11B705B824FADFAB0036E2D7 /* OverlayPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
 		11BF9C1024F9DB950086828D /* SimpleBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BF9C1324F9DB950086828D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BF9C1524F9DB950086828D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 				11BF9C1724F9DB950086828D /* ViewController.swift */,
 				11083D6824FA913700A6F91B /* MultipleObjectsVC.swift */,
 				11D022E224FA97A500CD3468 /* SimpleBoxWithTouchVC.swift */,
+				11B705B524FAD37B0036E2D7 /* OverlayingPlaneVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -80,6 +85,7 @@
 				11BF9C1E24F9DB970086828D /* LaunchScreen.storyboard */,
 				11BF9C2124F9DB970086828D /* Info.plist */,
 				11D022E424FA9A2B00CD3468 /* Extensions.swift */,
+				11B705B824FADFAB0036E2D7 /* OverlayPlane.swift */,
 			);
 			path = SimpleBox;
 			sourceTree = "<group>";
@@ -156,10 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B705B924FADFAB0036E2D7 /* OverlayPlane.swift in Sources */,
 				11D022E524FA9A2B00CD3468 /* Extensions.swift in Sources */,
 				11D022E324FA97A500CD3468 /* SimpleBoxWithTouchVC.swift in Sources */,
 				11083D6924FA913700A6F91B /* MultipleObjectsVC.swift in Sources */,
 				11BF9C1824F9DB950086828D /* ViewController.swift in Sources */,
+				11B705B624FAD37B0036E2D7 /* OverlayingPlaneVC.swift in Sources */,
 				11BF9C1424F9DB950086828D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
