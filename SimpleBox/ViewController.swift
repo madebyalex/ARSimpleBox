@@ -53,19 +53,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
-    // Adding an object
+    // Adding some objects
     func addObject() {
+        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0.01)
         
-        // Adding some 3D text
-        let text = SCNText(string: "Hello ARKit!", extrusionDepth: 1.0)
-        text.firstMaterial?.diffuse.contents = UIColor.green
-        text.chamferRadius = 0.01
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.yellow
+        box.materials = [material]
         
-        let textNode = SCNNode(geometry: text)
-        textNode.position = SCNVector3(0, 0, -0.5)
-        textNode.scale = SCNVector3(0.05, 0.05, 0.05)
+        let boxNode = SCNNode(geometry: box)
+        boxNode.position = SCNVector3(0, 0, -0.75)
         
-        sceneView.scene.rootNode.addChildNode(textNode)
+        let sphere = SCNSphere(radius: 0.4)
+        sphere.firstMaterial?.diffuse.contents = UIColor.systemPink
+        
+        let sphereNode = SCNNode(geometry: sphere)
+        sphereNode.position = SCNVector3(0.6, -0.05, -0.75)
+        
+        sceneView.scene.rootNode.addChildNode(boxNode)
+        sceneView.scene.rootNode.addChildNode(sphereNode)
+        
     }
     
     // Adding Basic Lighting
