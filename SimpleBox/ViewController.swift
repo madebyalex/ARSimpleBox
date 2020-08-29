@@ -34,7 +34,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let material = SCNMaterial()
         material.diffuse.contents = UIColor.blue
         
-        box.materials = [material]
+        box.materials = [material] 
         
         let boxNode = SCNNode(geometry: box)
         boxNode.position = SCNVector3(0, 0, -1)
