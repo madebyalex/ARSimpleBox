@@ -29,17 +29,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
-        let box = SCNBox(width: 0.3, height: 0.3, length: 0.3, chamferRadius: 0.02)
+        // Adding a 3D object
+        addObject()
         
-        let material = SCNMaterial()
-        material.diffuse.contents = UIColor.blue
-        
-        box.materials = [material]
-        
-        let boxNode = SCNNode(geometry: box)
-        boxNode.position = SCNVector3(0, 0, -1)
-        
-        self.sceneView.scene.rootNode.addChildNode(boxNode)
+        // Adding some default lighting
+        configureLighting()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +51,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    // Adding an object
+    func addObject() {
+        
+        // Adding some 3D text
+        let text = SCNText(string: "Hello ARKit!", extrusionDepth: 1.0)
+        text.firstMaterial?.diffuse.contents = UIColor.green
+        text.chamferRadius = 0.01
+        
+        let textNode = SCNNode(geometry: text)
+        textNode.position = SCNVector3(0, 0, -0.5)
+        textNode.scale = SCNVector3(0.05, 0.05, 0.05)
+        
+        sceneView.scene.rootNode.addChildNode(textNode)
+    }
+    
+    // Adding Basic Lighting
+    func configureLighting() {
+        sceneView.autoenablesDefaultLighting = true
+        sceneView.automaticallyUpdatesLighting = true
     }
 
 }
